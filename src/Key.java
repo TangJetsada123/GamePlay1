@@ -8,8 +8,8 @@ public class Key {
     private int S;
     public boolean drawKey = true;
     public Key(int x, int y) {
-        this.x = 300;
-        this.y = 300;
+        this.x = 550;
+        this.y = 108;
     }
     public void addScore(){
         S = 1;

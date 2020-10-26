@@ -23,8 +23,9 @@ public class Enemy {
     public void update() {
         if (GamePanel.tracking == true) {
 
-            if( x< 150 || x> 600){
+            if( x< 150|| x> 600){
                 speedEnemyX = -speedEnemyX;
+
             }
             if(y <30  || y > 500){
                 speedEnemyY = -speedEnemyY;
@@ -34,10 +35,11 @@ public class Enemy {
             y += speedEnemyY;
         }
 
+
     }
     public Rectangle bounds()
     {
-        return  (new Rectangle(x,y,50,50));
+        return  (new Rectangle(x,y,32,32));
     }
 
 

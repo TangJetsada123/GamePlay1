@@ -7,7 +7,7 @@ class Main {
     public static int HEIGHT = 600;
     public static int H = 617;
     public static int W = 617;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         // Create window for game , set name ;
         JFrame window = new JFrame("MAMMA") ;

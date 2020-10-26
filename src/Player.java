@@ -71,34 +71,44 @@ public class Player  {
 
     }
 
+
     public void keyReleased(KeyEvent e) {
         int keyCode = e.getKeyCode();
         if (keyCode == 37) {
             this.speedX = 0;
+            System.out.println("X ="+x+"and Y ="+y);
+
         }
 
         if (keyCode == 39) {
             this.speedX = 0;
+            System.out.println("X ="+x+"and Y ="+y);
         }
 
         if (keyCode == 38) {
             this.speedY = 0;
+            System.out.println("X ="+x+"and Y ="+y);
         }
 
         if (keyCode == 40) {
             this.speedY = 0;
+            System.out.println("X ="+x+"and Y ="+y);
         }
-        if (keyCode == KeyEvent.VK_SPACE) {
+        if (keyCode == KeyEvent.VK_ENTER) {
             GamePanel.tracking = true;
             GamePanel.x = x ;
-            GamePanel.y = y ;
+            GamePanel.y = y ; }
+        if (keyCode == 32){
         }
+
+
+
 
     }
 
     public Rectangle bounds()
     {
-        return  (new Rectangle(x,y,50,50));
+        return  (new Rectangle(x,y,32,32));
     }
 
 
